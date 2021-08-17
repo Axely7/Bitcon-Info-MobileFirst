@@ -76,6 +76,8 @@ header img{
 
 .header--title-container .header--button{
     position: absolute; /*permite mover top,left,rigth,bottom. Con relative no es posible*/
+    left: calc(50% - 114.5px); /*Como el boton es muy largo, al momento de centrar lo reacomodamos
+    con 118px*/
     top: 270px;
     display: block;
     margin-top: 35px;
@@ -83,4 +85,21 @@ header img{
     width: 229px;
     height: 48px;
     background-color: var(--off-white);
+    /* Sombra */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+
+}
+
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/icons/down-arrow.svg');
 }
